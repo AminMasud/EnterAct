@@ -7,7 +7,8 @@ import Blogs from "./components/Blogs";
 import { useState } from "react";
 import MyProfile from "./components/MyProfile";
 import Create from "./components/Create";
-import CreateUser from "./components/CreateUser";
+import Signup from "./components/Signup";
+import Signin from "./components/Signin";
 
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/my-profile" element={<MyProfile />} />
           <Route path="/create" element={<Create />} />
-          <Route path="/create-user" element={<CreateUser />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/signin" element={<Signin />} />
         </Routes>
       </Router>
     </div>
