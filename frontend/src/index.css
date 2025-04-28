@@ -1,0 +1,295 @@
+:root {
+  --mainColor: #031B23;
+  --color1: #4AB4D5;
+  --boxColor: linear-gradient(180deg, rgba(6, 50, 65, 1) 0%, rgba(6, 50, 65, 1) 20%, rgba(11, 109, 133, 1) 96%);
+  --mainFont: 'NightinTokyo';
+  --secondFont: 'Orbitron';
+
+}
+
+@font-face {
+  font-family: 'NightinTokyo';
+  src: url('../public/NightinTokyo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../public/Orbitron-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 10px;
+  margin: 0;
+  color: white;
+
+}
+
+body {
+  background: var(--mainColor);
+  padding: 0
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  width: 100%;
+
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-size: 22px;
+  font-family: var(--mainFont);
+
+}
+
+.bg,
+.bgShop,
+.bgBlogs,
+.bgMyProfile {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-20px);
+  border-bottom: 70px solid rgba(6, 50, 65, 1);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  opacity: 1;
+
+
+}
+
+
+.bg {
+  transform: translateX(0px) translateY(-30px);
+}
+
+
+.bgShop {
+  transform: translateX(160px) translateY(-30px);
+
+}
+
+
+.bgBlogs {
+  transform: translateX(320px) translateY(-30px);
+
+}
+
+.bgMyProfile {
+  opacity: 0;
+
+
+
+}
+
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100px;
+  margin: 0 20px;
+  z-index: 2;
+
+
+
+
+}
+
+.menu-btn:hover {
+  color: aqua;
+  cursor: pointer;
+
+
+}
+
+.user-name-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(174, 139, 208);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  font-family: var(--mainFont);
+  height: 100%;
+}
+
+.box {
+  background-image: var(--boxColor);
+  width: 100%;
+  max-width: 1280px;
+  min-height: 80vh;
+  padding: 15px 15px;
+  border-radius: 5px;
+}
+
+.sort {
+  border-radius: 5px;
+  border: 2px solid var(--color1);
+  width: 300px;
+}
+
+.quests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.quest {
+  border-radius: 5px;
+  border: 2px solid var(--color1);
+  width: 900px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  font-family: var(--secondFont);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  width: 220px;
+  color: white;
+}
+
+.quest-info {
+  width: 640px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quest-info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 640px;
+}
+
+.quest-info-mid {
+  height: 200px;
+}
+
+.quest-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 160px;
+  font-family: var(--secondFont);
+  background: var(--color1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: var(--mainColor);
+  border-radius: 10px;
+}
+
+.border {
+  border: 2px solid var(--color1);
+  border-radius: 10px;
+
+}
+
+.inner-box-myprofile {
+  width: 780px;
+  height: 820px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.my-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.points {
+  padding: 10px;
+  height: 70px;
+  width: 360px;
+}
+
+.following {
+  padding: 10px;
+  height: 270px;
+  width: 360px;
+}
+
+.box1,
+.box3,
+.box4 {
+  width: 360px;
+  height: 380px;
+}
+
+.box2 {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.form-create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group>input,
+.form-group>textarea,
+.form-group>select,
+.form-group>select option {
+  color: black;
+}
